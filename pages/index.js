@@ -1,10 +1,16 @@
 
 import Head from "next/head";
 import IconBar from "../components/iconBar";
-
+import ProjectCard from "../components/projectCard";
+import Balancer from 'react-wrap-balancer'
+import Hero from "../components/sections/hero";
+import Image from "next/image";
+import Skills from "../components/sections/skills";
+import BottomBar from "../components/bottomBar";
 export default function Home() {
   return (
-    <div >
+    <div className=" font-outfit min-h-screen max-w-screen from-neutral-900  to-neutral-800  bg-gradient-to-br  " >
+
       <Head>
         <title>Shiv Sarthak Sabhlok</title>
         <link rel="icon" href="/assets/icon.png" />
@@ -16,27 +22,14 @@ export default function Home() {
         <meta property="og:url" content="https://shivsarthak.com" />
         <meta property="og:image" content="https://shivsarthak.com/assets/icon.png" />
         <meta property="og:image:alt" content="Shiv Sarthak | Portfolio" />
-
       </Head>
-      <div className=" h-screen  bg-neutral-800 flex items-center justify-center z-0">
-        <div >
-          <h1 className=" text-center text-neutral-200 text-6xl font-bold ">Shiv Sarthak Sabhlok</h1>
-          <h2 className="  text-neutral-400 text-lg font-normal text-center py-4">Software Developer . Certified Ethical Hacker . Learner</h2>
-          <IconBar />
-          <div className=" flex items-center justify-center pt-4">
-            <a href="https://cloud.shivsarthak.com/s/ryb5Qj9m9jXH3x5">
-              <div className=" bg-neutral-700 rounded-md m-2 py-2 px-6  hover:shadow-neutral-900 hover:shadow-md text-neutral-400 hover:text-white transition-all duration-300 hover:scale-105" >
-                <h1 className="  font-semibold text-center ">Resume</h1>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
-
-      </div>
-
+      <main className=" bg-[url('/assets/BG.svg')] bg-repeat bg-fixed">
+        <Hero />
+        <div className=" border-b-2 border-neutral-700 w-3/5 mx-auto mb-12" />
+        <Skills />
+        <div className="py-6" />
+        <BottomBar></BottomBar>
+      </main>
     </div>
-
   )
 }
