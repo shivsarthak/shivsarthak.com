@@ -1,16 +1,13 @@
 
 import Head from "next/head";
-import IconBar from "../components/iconBar";
-import ProjectCard from "../components/projectCard";
-import Balancer from 'react-wrap-balancer'
 import Hero from "../components/sections/hero";
-import Image from "next/image";
 import Skills from "../components/sections/skills";
 import BottomBar from "../components/bottomBar";
+import Projects from "../components/sections/projects";
+import Experience, { Education, EducationAndCertification } from "../components/sections/experience";
 export default function Home() {
   return (
     <div className=" font-outfit min-h-screen max-w-screen from-neutral-900  to-neutral-800  bg-gradient-to-br  " >
-
       <Head>
         <title>Shiv Sarthak Sabhlok</title>
         <link rel="icon" href="/assets/icon.png" />
@@ -27,9 +24,16 @@ export default function Home() {
         <Hero />
         <div className=" border-b-2 border-neutral-700 w-3/5 mx-auto mb-12" />
         <Skills />
+        <Projects />
+        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-12 px-32 ">
+          <Experience />
+          <EducationAndCertification/>
+        </div>
+
         <div className="py-6" />
         <BottomBar></BottomBar>
       </main>
+
     </div>
   )
 }
