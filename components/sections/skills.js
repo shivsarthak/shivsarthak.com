@@ -3,14 +3,14 @@ import Balancer from 'react-wrap-balancer'
 import Image from 'next/image';
 import SkillCard from '../skillCard';
 export default function Skills() {
-    return <div className=' pb-24'>
+    return <div className=' pb-12'>
         <h2 className="text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-transparent bg-clip-text bg-gradient-to-br from-neutral-400 to-neutral-800 " >
-            <p>Skills That Set Me Apart: A Showcase of </p>
-            <p>My Proficiencies and Expertise</p>
+            <Balancer ratio={0.5}>Skills That Set Me Apart: A Showcase
+                of My Proficiencies and Expertise</Balancer>
         </h2>
         <center>
             <div className=' w-[90%] md:w-3/4  grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-6 overflow-visible'>
-               
+
                 <SkillCard
                     title="Web & Mobile Development "
                     desc="Design, develop, and deploy responsive and efficient web and mobile applications using various programming languages and frameworks.">

@@ -25,7 +25,7 @@ export default function Home() {
         <div className=" border-b-2 border-neutral-700 w-3/5 mx-auto mb-12" />
         <Skills />
         <Projects />
-        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-12 px-32 ">
+        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-12 md:px-32 px-12 ">
           <Experience />
           <EducationAndCertification/>
         </div>

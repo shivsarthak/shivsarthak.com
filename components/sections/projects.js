@@ -11,9 +11,9 @@ export default function Projects() {
             'image': '/assets/subai.png'
         }
     ]
-    return <div className=" pb-12">
+    return <div className=" pb-6">
         <h2 className="text-2xl md:text-3xl font-normal text-center py-4 text-transparent bg-clip-text bg-gradient-to-br from-neutral-400 to-neutral-700 " >
-            My Recent Work
+            My Recent Project Work
         </h2>
         <div className=" md:px-16 lg:px-32 grid grid-cols-1 lg:grid-cols-1 gap-2">
             {projects.map((item, key) =>
