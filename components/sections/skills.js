@@ -4,7 +4,7 @@ import Image from 'next/image';
 import SkillCard from '../skillCard';
 export default function Skills() {
     return <div className=' pb-12'>
-        <h2 className="text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-transparent bg-clip-text bg-gradient-to-br from-neutral-400 to-neutral-800 " >
+        <h2 className=" px-24 text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-neutral-400 " >
             <Balancer ratio={0.5}>Skills That Set Me Apart: A Showcase
                 of My Proficiencies and Expertise</Balancer>
         </h2>

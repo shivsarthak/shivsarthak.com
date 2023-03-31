@@ -36,7 +36,7 @@ export default function Experience() {
 
     return <div>
 
-        <h2 className="text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-transparent bg-clip-text bg-gradient-to-br from-neutral-400 to-neutral-800 " >
+        <h2 className="text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-neutral-400 " >
             Experience
         </h2>
         <ol className="relative border-l border-neutral-700 ">
@@ -57,7 +57,7 @@ export default function Experience() {
                         <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
                             {item.period}&nbsp;<span className=" text-neutral-500 text-xs">{` ${item.duration }`} </span>
                         </time>
-                        <p className="mb-4 text-base font-normal text-neutral-500 ">{item.desc}</p>
+                        <p className="mb-4 text-base text-justify font-normal text-neutral-500 ">{item.desc}</p>
                     </li>)
                 }
                 )
@@ -95,7 +95,7 @@ export function EducationAndCertification() {
 
     return <div>
 
-        <h2 className="text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-transparent bg-clip-text bg-gradient-to-br from-neutral-400 to-neutral-800 " >
+        <h2 className="text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-neutral-400 " >
             Education
         </h2>
         <ol className="relative border-l border-neutral-700 ">
@@ -108,13 +108,13 @@ export function EducationAndCertification() {
                         <h3 className=" mb-1 text-xl text-left  text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-500">{item.institution}</h3>
                         <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">{item.period}</time>
                         <h3 className="block mb-2 text-base font-normal leading-none text-neutral-400 ">{item.course}</h3>
-                        <p className="mb-4 text-base font-normal text-neutral-500 ">{item.desc}</p>
+                        <p className="mb-4 text-base text-justify font-normal text-neutral-500 ">{item.desc}</p>
                     </li>)
                 }
                 )
             }
         </ol>
-        <h2 className="text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-transparent bg-clip-text bg-gradient-to-br from-neutral-400 to-neutral-800 " >
+        <h2 className="text-2xl md:text-3xl font-normal text-center py-4 pb-12 text-neutral-400  " >
             Certifications
         </h2>
         <ol className="relative border-l border-neutral-700 ">
@@ -127,7 +127,7 @@ export function EducationAndCertification() {
                         <h3 className=" mb-1 text-xl text-left  text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-500">{item.title}</h3>
                         <h3 className="block mb-2 text-base font-normal leading-none text-neutral-400 ">{item.institution}</h3>
                         <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">{item.validity}</time>
-                        <p className="mb-4 text-base font-normal text-neutral-500 ">{item.id}</p>
+                        <p className="mb-4 text-base text-justify font-normal text-neutral-500 ">{item.id}</p>
                     </li>)
                 }
                 )
