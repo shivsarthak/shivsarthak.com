@@ -5,4 +5,4 @@ services:
     image: 192.168.0.191:5000/shivsarthak/website
     build: .
     ports:
-      - 3000:7890
+      - 7890:3000

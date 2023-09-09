@@ -2,6 +2,14 @@ export default function Experience() {
 
     const experience_list = [
         {
+            'company': 'Spur ( meetspur.app )',
+            'designation': 'founding Engineer',
+            'period': 'July 2023 - Now ',
+            'duration': '( Current )',
+            'desc': `I'm pioneering solutions that make eCommerce communication magical through automation and customer-centric design`
+
+        },
+        {
             'company': 'Indian Space Research Organization',
             'designation': 'Project Intern',
             'period': 'October 2022 - April 2023 ',
